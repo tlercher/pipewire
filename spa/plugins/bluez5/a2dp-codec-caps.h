@@ -304,6 +304,8 @@
 #define OPUS_G_SET(a, freq, dur, ch) \
 	(a).data = ((freq) & OPUS_G_FREQUENCY_MASK) | ((dur) & OPUS_G_DURATION_MASK) | ((ch) & OPUS_G_CHANNELS_MASK)
 
+#define EAC3_A_VENDOR_ID	0x0000004c
+#define EAC3_A_CODEC_ID		0x8001
 
 typedef struct {
 	uint32_t vendor_id;
